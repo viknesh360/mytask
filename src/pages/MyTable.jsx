@@ -214,7 +214,7 @@ const DynamicTable = ({ data, setData, height, width }) => {
 
   return (
     <div className="overflow-auto border border-gray-300">
-      <table className="border-collapse" style={{ height, width }} ref={tableRef}>
+      <table className="border-collapse" style={{ minHeight:height, minWidth:width }} ref={tableRef}>
         <tbody>
           {data.map((row, rowIndex) => (
             <tr key={`row-${rowIndex}`}>
